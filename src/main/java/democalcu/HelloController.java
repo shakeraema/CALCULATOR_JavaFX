@@ -2,9 +2,7 @@ package democalcu;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.ResourceBundle.Control;
 
-import javafx.event.ActionEvent;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -39,8 +37,11 @@ public class HelloController  implements Initializable {
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to Calculator!");
     }*/
-    public void initialize(URL url, ResourceBundle rb)
-    {
-        //
+
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }
