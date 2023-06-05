@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="democalcu.HelloController">
    <children>
       <BorderPane prefHeight="39.0" prefWidth="300.0" />
       <TextField fx:id="txt_result" prefHeight="85.0" prefWidth="260.0">
@@ -21,7 +21,7 @@
       </TextField>
       <HBox prefHeight="46.0" prefWidth="300.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text="7">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="7">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -29,7 +29,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text="8">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="8">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -37,7 +37,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text="9">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="9">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -45,7 +45,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Wheat;" text="/">
+            <Button mnemonicParsing="false" onAction="#Operation" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Wheat;" text="/">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -57,7 +57,7 @@
       </HBox>
       <HBox prefHeight="49.0" prefWidth="300.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text="4">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="4">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -65,7 +65,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text="5">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="5">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -73,7 +73,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text="6">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="6">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -81,7 +81,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Teal;" text="X" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#Operation" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Teal;" text="X" textFill="WHITE">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -93,7 +93,7 @@
       </HBox>
       <HBox prefHeight="50.0" prefWidth="300.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text="1">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="1">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -101,7 +101,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text="2">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="2">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -109,7 +109,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text="3">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="3">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -117,7 +117,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Turquoise;" text="-">
+            <Button mnemonicParsing="false" onAction="#Operation" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Turquoise;" text="-">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -129,7 +129,7 @@
       </HBox>
       <HBox prefHeight="52.0" prefWidth="300.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text="0">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text="0">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -137,7 +137,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" text=".">
+            <Button mnemonicParsing="false" onAction="#Number" prefHeight="45.0" prefWidth="60.0" text=".">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -145,7 +145,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Skyblue;" text="=">
+            <Button mnemonicParsing="false" onAction="#Operation" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Skyblue;" text="=">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
@@ -153,7 +153,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Black;" text="+" textFill="#faf4f4">
+            <Button mnemonicParsing="false" onAction="#Operation" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Black;" text="+" textFill="#faf4f4">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>

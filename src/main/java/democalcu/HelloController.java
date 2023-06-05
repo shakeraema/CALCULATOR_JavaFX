@@ -23,13 +23,14 @@ public class HelloController  implements Initializable {
        long number1;
        long number2;
        //click CTRL
+    //  First Method
 
        public void Number(ActionEvent ae)
        {
             String no = ((Button)ae.getSource()).getText();
-            txt_result.setText(txt_result.getText()+no)
+            txt_result.setText(txt_result.getText()+no);
        }
-       //Second
+       //Second Method
     public void Operation (ActionEvent ae)
     {
         String operation = ((Button)ae.getSource()).getText();
@@ -52,10 +53,19 @@ public class HelloController  implements Initializable {
             //create 3 Method calculate
         }
     }
+    //3 Method
     public void calculate (long n1, long n2, String op){
            // TODO
         switch (op) {
-            case "+" : txt_result.setText(n1 + n2 + "");
+            case "+" : txt_result.setText(n1 + n2 + ""); break;
+            case "-" : txt_result.setText(n1 - n2 + ""); break;
+            case "x" : txt_result.setText(n1 * n2 + ""); break;
+            case "/" : //txt_result.setText(n1 / n2 + ""); break;
+                if(n2==0)
+                {
+                    txt_result.setText("0"); break;
+                }
+                txt_result.setText(n1/n2 + ""); break;
         }
     }
 
