@@ -81,7 +81,7 @@
                   <Font name="System Bold" size="28.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#Operation" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Teal;" text="X" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#Operation" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: Teal;" text="x" textFill="WHITE">
                <HBox.margin>
                   <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                </HBox.margin>
